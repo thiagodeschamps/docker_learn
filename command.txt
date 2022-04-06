@@ -1,0 +1,20 @@
+# build image
+docker build .
+
+# build image and give a name to it
+docker build -t hello-internet .
+
+# list images
+docker images
+
+# run images
+docker run -d -p 80:80 3909c8d399f5
+
+# list processess
+docker ps
+
+# stop process
+docker stop recursing_snyder
+
+# enter in container
+docker exec -it a2c0ea507534 /bin/sh
